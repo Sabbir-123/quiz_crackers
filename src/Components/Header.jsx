@@ -38,16 +38,6 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to='/topics'
-              aria-label='Topic'
-              title='Topic'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-            >
-              Topics
-            </Link>
-          </li>
-          <li>
-            <Link
               to='/statistics'
               aria-label='Statistics'
               title='Statistics'
@@ -134,16 +124,7 @@ const Header = () => {
                 </div>
                 <nav>
                   <ul className='space-y-4'>
-                    <li>
-                      <Link
-                        to='/topics'
-                        aria-label='Topics'
-                        title='Topics'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                      >
-                        Topics
-                      </Link>
-                    </li>
+                    
                     <li>
                       <Link
                         to='/statistics'
