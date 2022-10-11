@@ -1,17 +1,34 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Option = ({option}) => {
+
+
+const Option = ({option, correctAnswer}) => {
+    console.log(option);
+    const handleQuiz = e =>{
+        if(e === correctAnswer){
+            toast('You have choosed the correct Answer')
+        }else{
+            toast('You have choosed the wrong Answer')
+        }
+    }
     return (
         <div className="form-check ">
-        <label>
-          <input
-            type="radio"
-            name="react-tips"
-            value="option3"
-            className="form-check-input"
-          />
-          {option}
-        </label>
+        <label  className="flex align-middle p-3">
+            <input
+              type="radio"
+              name="quiz"
+              value={option.value}
+          
+              className="radio radio-accent mr-2"
+              defaultChecked={option.value === correctAnswer}
+              onChange={() => handleQuiz(option)}
+            />
+            {option}
+        
+            <ToastContainer />
+          </label>
       </div>
     );
 };
