@@ -14,7 +14,7 @@ const Option = ({option, correctAnswer}) => {
         }
     }
     return (
-        <div className="form-check ">
+        <div className="form-check border bottom-3 border-gray-600 border-spacing-3 hover:border-dotted">
         <label  className="flex align-middle p-3">
             <input
               type="radio"

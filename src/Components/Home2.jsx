@@ -27,6 +27,7 @@ export const Home = () => {
               <div className="w-full h-3 -mt-3 bg-deep-purple-accent-400" />
             </span>
           </h2>
+          <img className="mx-auto" src="header.png" alt=""  width={200} height={250}/>
           <p className="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
           Flashy Quiz is a web-based Audience Engagement Cloud Platform for
             hosting interactive trivia quizzes at in-person, virtual, and hybrid

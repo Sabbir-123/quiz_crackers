@@ -14,12 +14,14 @@ const Question = ({Squestion}) => {
     
     return (
         <div className='bg-gray-100 p-6 mx-1 rounded shadow-lg'>
-      <h4  className='grid grid-cols-1 mb-2 text-xl font-bold leading-none sm:text-2xl'> {question} 
+    <div className='flex justify-between align-middle'>
+    <h4  className='grid grid-cols-1 mb-2 text-xl font-bold leading-none sm:text-2xl'> {question} </h4>
       <p onClick={handleRightQuiz} className='cursor-pointer'>
       <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
 
           </p>
-          </h4>
+    </div>
+          
       <p className='text-gray-700 '>Options: {
         
         options.map(option => <Option option={option} key={id} correctAnswer={correctAnswer}></Option> )

@@ -6,14 +6,14 @@ const Quizes = ({quizes}) => {
 
    
     return (
-        <div className='bg-gray-100 p-6 mx-1 rounded shadow-lg'>
+        <div className='bg-gray-600 p-6 mx-1 rounded shadow-lg'>
       <img
         className='object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80'
         src={logo}
         alt=''
       />
       <p className='mb-2 text-xl font-bold leading-none sm:text-2xl'>{name}</p>
-      <p className='text-gray-700 '>Total: {total}</p>
+      <p className='text-gray-100 '>Total: {total}</p>
       <div>
       <Link to={`/quiz/${id}`}>
       <button
